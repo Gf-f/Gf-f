@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 400px;
+            height: 600px;
+            border: 10px solid red;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        .box .div1{
+            width: 200px;
+            height: 200px;
+            background-color: royalblue;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            /* position: absolute;
+            top: 20px;
+            left: 20px; */
+        }
+        .bottom{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="div1"></div>
+        hello world
+    </div>
+    <div class="bottom">返回顶部</div>
+    <!-- relative 相对于元素该在的位置定位 原位置站位还在 -->
+    <!-- relative 相对于最近的设置了非static定位的父元素位置定位 脱离文档流 -->
+    <!-- relative 相对于窗口位置定位 滚动滚动条仍在界面上-->
+</body>
+</html>

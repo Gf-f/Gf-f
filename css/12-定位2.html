@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 500px;
+            width: 500px;
+            border: 5px solid ;
+            /* position: relative; */
+        }
+        
+        .div1{
+            height: 200px;
+            width: 200px;
+            border: solid 2px ;
+            background-color: #289;
+            /* position: absolute;
+            z-index: 1; */
+        }
+        .div3{
+            height: 100px;
+            width: 100px;
+            border: solid 2px ;
+            background-color: red;
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            left: 0;
+        }
+        .div2{
+            height: 250px;
+            width: 250px;
+            border: solid 2px ;
+            background-color: yellow;
+            position: absolute;
+            z-index: 2;
+            /* top: 0;
+            left: 0; */
+        } 
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="div1">
+          <div class="div3"></div>
+        </div>
+        <div class="div2">
+            
+        </div>
+        啊啊啊
+      </div>
+</body>
+</html>
