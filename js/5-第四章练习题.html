@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        // var age=window.prompt("年龄");
+        // if(age<14&&age>=0){
+        //     alert("儿童");
+        // }else if(age>=14&&age<24){
+        //     alert("青少年");
+        // }else if(age>=24&&age<40){
+        //     alert("青年");
+        // }else if(age>=40&&age<60){
+        //     alert("中年");
+        // }else if(age>=60){
+        //     alert("老年");
+        // }else{
+        //     alert("输入年龄有误")
+        // }
+        //2
+        // var num=window.prompt("请输入");
+        // num=parseInt(num);
+        // switch(num){
+        //     case 0:console.log("星期一");break;
+        //     case 1:console.log("星期二");break;
+        //     case 2:console.log("星期三");break;
+        //     case 3:console.log("星期四");break;
+        //     case 4:console.log("星期五");break;
+        //     case 5:console.log("星期六");break;
+        //     case 6:console.log("星期日");break;
+        //     default:day="输入有误";
+        // }
+
+        //3
+        // function foo(n){
+        //     var sum=1;
+        //     for(var i=1;i<=n;i++){
+        //         sum*=i;
+        //     }
+        //     return sum;
+        // }
+        // alert(foo(10));
+
+        //4
+        // var num=1;
+        // var sum=0;
+        // for(var i=1;i<=10;i++){
+        //     //num=1;
+        //     for(var j=1;j<=i;j++){
+        //         num*=j;
+        //     }
+        //     sum+=num;
+        // }
+        // console.log(sum);
+
+        //5
+        // for(var i=1;i<=5;i++){
+        //     for(j=1;j<=i;j++){
+        //         document.write(j+"&nbsp");
+        //     }
+        //     document.write("</br>");
+        // }
+
+        //6
+        // function foo(n){
+        //     for(var i=0;i<n;i++){
+        //         for(var j=n-1;j>i;j--){
+        //             document.write("&nbsp")
+        //         }
+        //         for(var k=0;k<=i;k++){
+        //             document.write("*&nbsp");
+        //         }
+        //         document.write("</br>");
+        //     }
+        // }
+        // foo(5); 
+
+        //7
+        // for(var i=100;i<1000;i++){
+        //     if(i%4==2&&i%7==3&&i%9==5){
+        //         document.write(i+"&nbsp");
+        //     }
+        // }
+
+        //8
+        for(var i=1000;i<10000;i++){
+            var a=Math.floor(i/1000);
+            var b=Math.floor(i/100)%10;
+            var c=Math.floor(i/10)%10;
+            if(i%13==0&&a==b+c)
+            document.write(i+"<br/>");
+        }
+    </script>
+</body>
+</html>
